@@ -1,0 +1,10 @@
+name: Deploy
+on: push
+jobs: 
+deploy: 
+steps:
+-uses: actions/chechout@v3
+-uses: actions/upload-artifact@v3
+with:
+name: app
+path: public
